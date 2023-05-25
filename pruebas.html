@@ -1,0 +1,87 @@
+<html>
+	<head>
+	    <title>Fondo de prueba</title>
+	</head>
+
+	<body background="fondo1.jpg" bgcolor="FFCECB">
+
+	<table width="550" bgcolor=FFCECB align=center>
+	<tr>
+	    <td>
+
+	    <h1 style="color:000000">Probando...</h1>
+	    <br>
+	    Este texto se lee bien porque tiene un fondo plano.
+	    <br>
+
+	    </td>
+	</tr>
+	<form id="form">
+		<div>
+		  <label>Nombre</label>
+		  <input type="text" name="nam" id="nam">
+		</div>
+		<div>
+		  <label>Email</label>
+		  <input type="email" name="email" id="email">
+		</div>
+		<div>
+		  <label>Teléfono</label>
+		  <input type="text" name="cel" id="cel">
+		</div>
+		<div>
+		  <label>Ciudad</label>
+		  <input type="text" name="ciudad" id="ciudad">
+		</div>
+		<div>
+		  <label>Código postal</label>
+		  <input type="text" name="codigo" id="codigo">
+		</div>
+		<button type="submit">Enviar</button>
+	  </form>
+	  
+	  <script>
+	  const form = document.getElementById('form');
+	  
+	  form.addEventListener('submit', (e) => {
+		e.preventDefault();
+		
+		const nam = document.getElementById('nam');
+		const email = document.getElementById('email');
+		const cel = document.getElementById('cel');
+		const ciudad = document.getElementById('ciudad');
+		const codigo = document.getElementById('codigo');
+		
+		let error = [];
+		
+		if (name.value.length < 3) {
+		  error.push('El nombre es obligatorio');
+		}
+		
+		if (!email.value.includes('@') || !email.value.includes('.')) {
+		  error.push('Email inválido');
+		}
+		
+		if (phone.value.length < 9) {
+		  error.push('Teléfono inválido');
+		}
+		
+		if (city.value.length < 3) {
+		  error.push('La ciudad es obligatoria');
+		}
+		
+		if (isNaN(codigo.value) || codigo.value.length < 5) {
+		  error.push('Código postal inválido');
+		}
+		
+		if (errors.length > 0) {
+		  alert(error.join('\n'));
+		} else {
+		  alert('Formulario enviado correctamente');
+		}
+	  });
+	  </script> 
+	</body>
+	</html>
+
+	https://developers.google.com/maps/documentation/embed/quickstart?hl=es-419#testing_your_iframe

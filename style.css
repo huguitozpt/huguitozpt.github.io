@@ -1,0 +1,39 @@
+/* Estilos para el footer */
+footer {
+    background-color: #f2f2f2;
+    color: #888;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Estilos para los enlaces del footer */
+  footer a {
+    color: #888;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer a:hover {
+    color: #000;
+  }
+  
+  /* Estilos para el contenido del footer */
+  footer p {
+    margin: 0;
+  }
+  
+  footer .logo {
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para el contenido adicional del footer */
+  footer .extra {
+    margin-top: 20px;
+    font-size: 12px;
+  }
