@@ -9,7 +9,7 @@ formulario.addEventListener('submit', (event) => {
   const mensaje = formulario.mensaje.value;
   
   // Aquí iría el código para enviar los datos del formulario por correo electrónico o guardarlos en una base de datos
-  
+  // no se como se hace todavia
   // Muestra un mensaje de confirmación al usuario
-  alert(`Gracias por contactarnos, ${nombre}. Te responderemos pronto a ${email}.`);
+  //alert(`Gracias por contactarnos, ${nombre}. Te responderemos pronto a ${email}.`);
 });

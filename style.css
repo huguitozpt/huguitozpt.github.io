@@ -1,39 +1,57 @@
-/* Estilos para el footer */
-footer {
-    background-color: #f2f2f2;
-    color: #888;
-    padding: 20px;
-    text-align: center;
-    font-size: 14px;
-    font-family: Arial, sans-serif;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
+
+
+/** {
+  box-sizing: border-box;
+}
+*/
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
   
-  /* Estilos para los enlaces del footer */
-  footer a {
-    color: #888;
-    text-decoration: none;
-    font-weight: bold;
-  }
+}
+
+
+
+
+.mapa-contenedor {
+  padding: 20px;
   
-  footer a:hover {
-    color: #000;
-  }
+}
+
+h3 {
+  margin-top: 0;
+  margin: left 10px;
+}
+
+.tiempo-info {
+ 
+  /*align-items: center;
+  justify-content: space-between;*/
   
-  /* Estilos para el contenido del footer */
-  footer p {
-    margin: 0;
+  gap: 10px;
+
+}
+
+.tiempo-icono {
+  height: 30px;
+  width: 30px;
+  font-size: 30px;
+  animation: spin 2s linear infinite;
+
+}
+.tiempo-descripcion{
+  border-bottom: 5px solid green;
+}
+#map { height: 200px; width: 200px; align-items: right; border-top: 5px solid purple; border-bottom: 5px solid purple}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  footer .logo {
-    max-width: 100px;
-    margin-bottom: 10px;
+  50% {
+    transform: rotate(180deg);
   }
-  
-  /* Estilos para el contenido adicional del footer */
-  footer .extra {
-    margin-top: 20px;
-    font-size: 12px;
-  }
+}
+
+
