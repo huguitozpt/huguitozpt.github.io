@@ -3,28 +3,23 @@
  /* fondo de la página */
  body {
   background-image: url("fondo 2.jpg");
+  
   background-size: cover;
   background-position: center;
   height: 1000px;
  
 }
 main {
-  background-color: rgb(255,255,0,255); /* Establece el color de fondo del elemento <main> en blanco */
-  padding: 10px; /* Establece un espacio interno (padding) de 20px para el elemento <main> */
+  background-color: rgba(255,255,0,.85); /* Establece el color de fondo del elemento <main> en blanco */
+   
   border-bottom: 5px solid green;
   border-top: 5px solid purple;
   
   }
 header {
-    /*background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1px;
-    margin-top:0%;
-    margin-left:0%;
-    margin-right:0%;*/
+    
     display: flex;
-    /*justify-content: space-between;*/
+    
     align-items: left;
     padding: 10px;
     background-color: rgb(147, 27, 162); /* Establece el color de fondo del encabezado */
@@ -84,25 +79,31 @@ header {
     background-size: cover;
     background-position: center center;
     height: 100vh;
-    gap: 20px;
-    margin-left: 10px;
+    gap: 5px;
+    margin-left: 5px;
 
   
   }
   .colu1{
     border-right: 5px solid green;
+    background-color: rgba(255,255,0,.85);
+   
     }
 
   .colu2{
       border-right: 5px solid green;
+      background-color: rgba(255,255,0,.85);
+      
       }
   .colu3{
     border-right: 5px solid green;
+    background-color: rgba(255,255,0,.85);
   }
 
   .lotejpg{
     height: 300px; width: 300px;
     background-image: url('tree.jpg');
+   
     background-repeat: no-repeat;
     background-size: contain; 
     background-position: right center;
@@ -128,21 +129,10 @@ header {
     border-top: 5px solid purple; border-bottom: 5px solid purple;
   }
 
-    /*background-color: rgba(4, 131, 28, 0.8); */
-
- 
-  /* Estilos para el footer 
-  footer {
-    background-image: url(http://www.keoniworld.com/wp-content/uploads/2016/06/swaying-field-grass.gif);
-  	background-position:  bottom;
-	  background-size: 100% auto;
-	  background-repeat: repeat-x;
-	  min-height: 10vh;
-
+  
       
    
-  } 
- */ 
+  
   
   .contenedor-flex {
     display: flex;
@@ -225,7 +215,7 @@ header {
   
   .counter {
     display: flex;
-    background-color: rgb(2, 141, 64);
+   /* background-color: rgb(2, 141, 64);*/
     color: rgb(255, 255, 255);
     border-radius: 5%;
     
@@ -242,9 +232,15 @@ header {
     /* oculta el contador si su valor es 0 */
     display: flex;
   }
+  /* lo mas nuevo*/
 
-
-
+  label{
+    display: inline-block;
+    width: 80px;
+  }
+  form{
+    margin: 20px;
+  }
 
 
 
